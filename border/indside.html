@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Border -Individual sides</title>
+    <style>
+    p{
+        border-top-style:dotted;
+        border-right-style:solid;
+        border-bottom-style:dotted;
+        border-left-style:solid;
+    }
+    p.one{
+        border-style: dotted;
+    }
+    p.two{
+        border-style: solid dotted ;
+    }
+    p.three{
+        border-style: dotted double solid;
+    }
+    p.four{
+        border-style: solid dotted double dashed;
+    }
+
+    </style>
+</head>
+<body>
+    <h1>Individual Border Sides.</h1>
+    <p>2 different border styles.</p>
+    <p class="one">One values </p>
+    <p class="two"> Two values</p>
+    <p class="three">Three values</p>
+    <p class="four">Four values</p>
+
+</body>
+</html>

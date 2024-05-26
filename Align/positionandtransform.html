@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Center Vertically- Using position And Transform</title>
+    <style>
+        .center{
+            border:3px solid green;
+            height:200px;
+            position: relative;
+        }
+        .center p{
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left:50%;
+            -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+        }
+    </style>
+</head>
+<body>
+    <h1>Center with postion and transform</h1>
+    <p>If <strong>padding</strong> and <strong>line-height</strong> are not option, another solution is to use <strong> positioning and the transform </strong>property:</p>
+     <p>In This example, we use positioning and the transform property to vertically and horizontally center the div element:</p>
+     <div class="center">
+        <p>I am vertically and horizontally centered.</p>
+     </div>
+</body>
+</html>

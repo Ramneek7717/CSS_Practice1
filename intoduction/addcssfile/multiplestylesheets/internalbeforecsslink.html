@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal style before the Link to the external style sheet</title>
+    <style>
+        h1{
+            color:red;
+        }
+    </style>
+    <link rel="stylesheet" href="external.css">
+</head>
+<body>
+    <p>If the internal style is define before the link to the external style sheet,the h1 elements will be "navy"</p>
+    <h1>This is a heading </h1>
+    <p>The style of this document is a combination of an external stylesheet,and internal style</p>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diffrent behavior of inline,inline-block,block</title>
+    <style>
+        span.a{
+            display: inline;/*the default for span*/
+            width: 100px;
+            height:100px;
+            padding: 5px;
+            border:1px solid blue;
+            background-color: yellow;
+        }
+        span.b{
+            display:inline-block;
+            width:100px;
+            height:100px;
+            padding: 5px;
+            border:1px solid blue;
+            background-color: yellow;
+
+        }
+        span.c{
+            display: block;
+            width:100px;
+            height: 100px;
+            padding: 5px;
+            border:1px solid blue;
+            background-color:yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1> Different behavior of inline, inline- block, block</h1>
+     <p>Compared to <strong> display: inline</strong>, the major difference is that <strong>display: inline-block</strong> allows to set a width and height on the element.
+
+        Also, with display: inline-block, the top and bottom margins/paddings are respected, but with display: inline they are not.</p>
+     <p>Compared to <strong>display: block</strong>, the major difference is that <strong>display: inline-block</strong> does not add a line-break after the element, so the element can sit next to other elements.</p>
+      <h1>The Display Property</h1>
+      <h2>display:inline</h2>
+      <div>Lorem ipsum dolor sit amet,<span class="a">consectetur</span> <span class="a">adipisicing</span>  elit. Hic aliquid dolorum tempore ab nulla. Laudantium excepturi, omnis, harum fuga sequi mollitia quo in fugit ex facilis vero quos consectetur architecto quam nihil esse molestias.</div>
+       <h2>display:inline-block</h2>
+       <div>Lorem ipsum dolor sit amet <span class="b"> consectetur</span> <span class="b">adipisicing</span> elit. Quae, at ad nam dolor illum animi nemo ullam alias facilis possimus! Ducimus iste quibusdam, possimus pariatur accusantium, eaque aliquam aperiam nesciunt doloremque, veritatis fugit sed.
+       </div>
+       <h2>display:block</h2>
+       <div>Lorem ipsum dolor sit amet <span class="c">consectetur</span> <span class="c">adipisicing</span>  elit. Voluptatum ex officiis, facilis earum magni accusantium sunt voluptate labore hic nam aspernatur impedit numquam autem accusamus quam at laudantium in quae sequi officia praesentium. Iure!</div>
+    </body>
+</html>

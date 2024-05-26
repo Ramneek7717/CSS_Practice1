@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transparent Box Using RGBA</title>
+    <style>
+        div{
+            background: rgb(4, 170, 109);
+            padding: 10px;
+        }
+        div.first{
+            background: rgba(4, 170, 109, 10%);
+        }
+        div.second{
+            background: rgba(4, 170,109, 30%);
+        }
+        div.third{
+            background: rgba(4, 170, 109, 60%);
+        }
+    </style>
+</head>
+<body>
+    <p>With RGBA color values:</p>
+    <div class="first"><p>10% opacity</p></div>
+    <div class="second"><p>30% opacity</p></div>
+    <div class="third"><p>60% opacity</p></div>
+    <div><p>default</p></div>
+    
+</body>
+</html>

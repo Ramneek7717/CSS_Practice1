@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objectfit</title>
+    <style>
+        img.cover{
+            width:200px;
+            height:300px;
+            object-fit:cover;
+        }
+        img.contain{
+            width:200px;
+            height:300px;
+            object-fit:contain;
+
+        }
+        img.fill{
+            width:200px;
+            height:300px;
+            object-fit: fill;
+        }
+        img.none{
+            width:200px;
+            height:300px;
+            object-fit: none;
+        }
+        img.scalldown{
+            width:200px;
+            height:300px;
+            object-fit: scale-down;
+        }
+</style>
+</head>
+<body>
+    <h1>Object fit</h1>
+    <img src="paris.jpg" alt="paris" width="400px" height="300px">
+    <h1>object-fit:cover</h1>
+    <img src="paris.jpg" alt="paris" class="cover" width="400px" height="300px">
+     <h1>Object-fit:conatin</h1>
+     <img src="paris.jpg" alt="paris" class="contain" width="400px" height="300px">
+     <h1>Object-fit:fill</h1>
+     <img src="paris.jpg" alt="paris" class="fill" width="400px" height="300px">
+     <h1>Object-fit:none</h1>
+     <img src="paris.jpg" alt="paris" class="none" width="400px" height="300px">
+     <h1>Object-fit:scalldown</h1>
+     <img src="paris.jpg" alt="paris" class="scalldown" width="400px" height="300px">
+    </body>
+</html>

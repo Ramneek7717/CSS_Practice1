@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex property</title>
+    <style>
+        .flex-container{
+            background-color: antiquewhite;
+            display: flex;
+            align-items: stretch;
+        }
+        .flex-container>div{
+            background-color: darkblue;
+            color: wheat;
+            line-height: 75px;
+            margin: 10px;
+            text-align: center;
+            font-size: 20px;
+            width: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>The flex Property </h1>
+    <p>The flex property is a shorthand property for the flex-grow, flex-shrink, and flex-basis properties</p>
+     <p>Make the third flex item not growable (0), not shrinkable (0), and with an initial length of 200 pixels:</p>
+      <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div style="flex: 0 0 200px">3</div>
+        <div>4</div>
+      </div>
+    </body>
+</html>

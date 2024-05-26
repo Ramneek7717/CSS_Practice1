@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Var() Function example1</title>
+    <style>
+        :root{
+            --blue:#6495ed;
+            --white:#faf0e6;
+
+        }
+        body{
+            background-color:var(--blue);
+        }
+        h2{
+            border-bottom: 2px solid var(--blue);
+        }
+        .container{
+            color: var(--blue);
+            background-color: var(--white);
+            padding: 15px;
+
+        }
+        button{
+            background-color: var(--white);
+            border: 1px solid var(--blue);
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Using the var() Function</h1>
+    <div class="container">
+    <h2>Lorem ipsum</h2>
+    <p>
+        Advantages of using var() are:
+        
+        makes the code easier to read (more understandable)
+        makes it much easier to change the color values
+        To change the blue and white color to a softer blue and white, you just need to change the two variable values:</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores delectus minima corrupti laboriosam quod exercitationem saepe dicta aliquid eligendi rem ducimus ratione quibusdam voluptate, nulla incidunt vero? Magni, est nihil.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta perferendis ipsa dignissimos, ad a fuga optio quod unde totam dolorem? Autem error illo quod culpa non optio esse a cupiditate.</p>
+    <button>yes</button>
+    <button>no</button>
+    </div>
+</body>
+</html>

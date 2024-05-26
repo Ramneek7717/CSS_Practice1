@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background-clip property</title>
+    <style>
+        #example1{
+         border: 10px solid black;
+         padding: 15px;
+         background: lightblue;
+         background-clip: border-box;
+        }
+        #example2{
+            border:10px dotted black;
+            padding: 15px;
+            background: lightcoral;
+            background-clip: padding-box;
+        }
+        #example3{
+            border:10px dotted black;
+            padding:15px;
+            background: lightblue;
+            background-clip: content-box;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>The background-clip Property</h1>
+    <p>The background-clip property define how far the background should extend within an element.</p>
+    <p>background-clip:border-box(his is default):</p>
+    <div id="example1">
+        <p>The background extends behind the border.</p>
+    </div>
+    <div id="example2">
+        <p>The background extends to the inside edge of the border. </p>
+    </div>   
+    <div id="example3">
+        <p>The Background extends to the edge of the content box.</p>
+    </div>
+</body>
+</html>
